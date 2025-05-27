@@ -1,14 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="script.js" defer></script>
-    <h1>Plesea right click the mouse and Inspect → Console</h1>
+    <title>Rock Paper Scissors - Retro Edition</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
+    <!-- Floating particles -->
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <div class="game-container">
+        <h1>🎮 Rock Paper Scissors 🎮</h1>
+        
+        <div class="battle-arena">
+            <div class="player-choice">
+                <h3>Your Choice</h3>
+                <div class="choice-display" id="playerDisplay">❓</div>
+            </div>
+            <div class="vs-text">VS</div>
+            <div class="computer-choice">
+                <h3>Computer Choice</h3>
+                <div class="choice-display" id="computerDisplay">❓</div>
+            </div>
+        </div>
+        <h1>choose your weapons</h1>
+        <div id="buttons">
+            <button id="rock" class="game-button rock-btn">
+                <div class="button-icon">🗿</div>
+                <div class="button-text">ROCK</div>
+                <div class="button-shine"></div>
+            </button>
+            <button id="paper" class="game-button paper-btn">
+                <div class="button-icon">📄</div>
+                <div class="button-text">PAPER</div>
+                <div class="button-shine"></div>
+            </button>
+            <button id="scissors" class="game-button scissors-btn">
+                <div class="button-icon">✂️</div>
+                <div class="button-text">SCISSORS</div>
+                <div class="button-shine"></div>
+            </button>
+        </div>
+        
+        <div id="result" class="info-panel">Choose your weapon!</div>
+        <div id="score" class="info-panel">Score: Human 0 - Computer 0</div>
+        <div id="winner" class="info-panel"></div>
+        
+        <div class="reset-container">
+            <button id="reset" class="game-button">🔄 Play Again</button>
+        </div>
+    </div>
+
+   
 </body>
 </html>
-        
